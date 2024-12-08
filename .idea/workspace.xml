@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c434c61-aaa7-465c-99ab-162614cb9286" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SportsAnalytics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dags/wikipedia_dataflow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelines/wikipedia_pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/entrypoint.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelines/data_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SportsAnalytics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SportsAnalytics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dags/wikipedia_dataflow.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/wikipedia_dataflow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipelines/wikipedia_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipelines/wikipedia_pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +40,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Python.SportsAnalytics.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.SportsAnalytics.executor&quot;: &quot;Run&quot;,
     &quot;Python.wikipedia_pipeline.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -65,42 +58,6 @@
       <recent name="E:\Projects\SportsAnalytics\pipelines" />
       <recent name="E:\Projects\SportsAnalytics\dags" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="SportsAnalytics" type="PythonConfigurationType" factoryName="Python">
-      <module name="SportsAnalytics" />
-      <option name="ENV_FILES" value="$PROJECT_DIR$/.venv" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (SportsAnalytics)" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="true" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="SCRIPT_NAME" value="script" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -120,6 +77,35 @@
       <updated>1730402981467</updated>
       <workItem from="1730402985679" duration="7019000" />
       <workItem from="1730477826084" duration="6734000" />
+      <workItem from="1730489611709" duration="959000" />
+      <workItem from="1730658397688" duration="3210000" />
+      <workItem from="1730740564577" duration="1712000" />
+      <workItem from="1730742300413" duration="171000" />
+      <workItem from="1730742484005" duration="337000" />
+      <workItem from="1730742831762" duration="126000" />
+      <workItem from="1730742969187" duration="6805000" />
+      <workItem from="1730752512692" duration="9282000" />
+      <workItem from="1730823344221" duration="10772000" />
+      <workItem from="1730924432629" duration="1821000" />
+      <workItem from="1731003826032" duration="3157000" />
+      <workItem from="1731359995750" duration="1193000" />
+      <workItem from="1731443318305" duration="144000" />
+      <workItem from="1731444143167" duration="220000" />
+      <workItem from="1731973626961" duration="1567000" />
+      <workItem from="1732049454380" duration="98000" />
+      <workItem from="1732211452864" duration="174000" />
+      <workItem from="1732212048750" duration="6000" />
+      <workItem from="1732213090619" duration="670000" />
+      <workItem from="1732567336004" duration="226000" />
+      <workItem from="1732567578158" duration="235000" />
+      <workItem from="1732571331127" duration="18000" />
+      <workItem from="1732571524811" duration="16000" />
+      <workItem from="1732571846357" duration="76000" />
+      <workItem from="1732571979595" duration="7000" />
+      <workItem from="1732730331807" duration="389000" />
+      <workItem from="1732740683887" duration="554000" />
+      <workItem from="1733168496816" duration="43000" />
+      <workItem from="1733168559700" duration="108000" />
     </task>
     <servers />
   </component>
@@ -139,6 +125,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SportsAnalytics$SportsAnalytics.coverage" NAME="SportsAnalytics Coverage Results" MODIFIED="1730481391810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/SportsAnalytics$wikipedia_pipeline.coverage" NAME="wikipedia_pipeline Coverage Results" MODIFIED="1730489379388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipelines" />
+    <SUITE FILE_PATH="coverage/SportsAnalytics$wikipedia_pipeline.coverage" NAME="wikipedia_pipeline Coverage Results" MODIFIED="1730749550894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipelines" />
   </component>
 </project>

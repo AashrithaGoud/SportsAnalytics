@@ -4,7 +4,7 @@ import os
 import sys
 from airflow.operators.python import PythonOperator
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from pipelines.wikipedia_pipeline import extract_data
+from pipelines.wikipedia_pipeline import extract_data, transform_data, write_data
 
 default_args = {
     'owner': 'admin',
@@ -22,5 +22,18 @@ with DAG(dag_id='wikipedia_dataflow',default_args=default_args,schedule='@daily'
         dag=dag
     )
 
+    transform_data_from_wikipedia=PythonOperator(
+        task_id='transform_data_from_wikipedia',
+        python_callable=transform_data,
+        provide_context=True,
+        dag=dag
+    )
 
+    write_wikipedia_data=PythonOperator(
+        task_id='write_wikipedia_data',
+        python_callable=write_data,
+        provide_context=True,
+        dag=dag
+    )
+extract_data_from_wikipedia >> transform_data_from_wikipedia >> write_wikipedia_data
 
